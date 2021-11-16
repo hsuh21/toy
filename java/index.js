@@ -4,10 +4,11 @@ window.addEventListener("load", function() {
     function playEye() {
         var audio = document.getElementById("eyeAudio");
         audio.play();
+        audio.volume = .6;
 
         var audio = document.getElementById("ambientAudio");
         audio.play();
-        audio.volume = .7;
+        audio.volume = .4;
     }
 
     document.getElementById("feather").addEventListener("click", playFeather);
@@ -29,6 +30,7 @@ window.addEventListener("load", function() {
     function playHowl() {
         var audio = document.getElementById("howlAudio");
         audio.play();
+        audio.volume= .5;
     }
 
     document.getElementById("toy").addEventListener("click", playToy);
